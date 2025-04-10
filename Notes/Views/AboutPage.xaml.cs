@@ -1,9 +1,13 @@
-namespace Notes.Views;
+using Notes.ViewModels;
 
-public partial class AboutPage : ContentPage
-{
-	public AboutPage()
-	{
-		InitializeComponent();
-	}
-}
+ namespace Notes.Views;
+
+ public partial class AboutPage : ContentPage
+ {
+ 	public AboutPage()
+ 	{
+ 		this.BindingContext = new AboutViewModel();
+ 		InitializeComponent();
+ 	}
+ }
+ 
